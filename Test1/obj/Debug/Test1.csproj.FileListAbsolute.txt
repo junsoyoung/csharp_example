@@ -1,0 +1,6 @@
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\Test1\bin\Debug\Test1.exe.config
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\Test1\bin\Debug\Test1.exe
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\Test1\bin\Debug\Test1.pdb
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\Test1\obj\Debug\Test1.csprojResolveAssemblyReference.cache
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\Test1\obj\Debug\Test1.exe
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\Test1\obj\Debug\Test1.pdb
