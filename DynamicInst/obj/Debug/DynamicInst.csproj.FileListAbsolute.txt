@@ -1,0 +1,6 @@
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DynamicInst\obj\Debug\DynamicInst.csprojResolveAssemblyReference.cache
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DynamicInst\bin\Debug\DynamicInst.exe.config
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DynamicInst\bin\Debug\DynamicInst.exe
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DynamicInst\bin\Debug\DynamicInst.pdb
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DynamicInst\obj\Debug\DynamicInst.exe
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DynamicInst\obj\Debug\DynamicInst.pdb
