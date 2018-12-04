@@ -5,3 +5,4 @@ E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DeleteContents\bin\Debug\Newtonsof
 E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DeleteContents\bin\Debug\Newtonsoft.Json.xml
 E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DeleteContents\obj\Debug\DeleteContents.exe
 E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DeleteContents\obj\Debug\DeleteContents.pdb
+E:\003_Work\02_VisualStudioStudy\CSharp\Test1\DeleteContents\obj\Debug\DeleteContents.csprojResolveAssemblyReference.cache

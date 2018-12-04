@@ -20,7 +20,7 @@ namespace DynamicInst
                 Console.WriteLine("[Foo]" + iData.ToString() + " " + iData2.ToString() + " " + szData);
             }
         }
-        public class Boo
+        public class Boo : IDisposable
         {
             public int iData;
             public int iData2;
@@ -31,6 +31,10 @@ namespace DynamicInst
                 iData2 = b;
                 szData = c;
                 Console.WriteLine("[Boo]" + iData.ToString() + " " + iData2.ToString() + " " + szData);
+            }
+            public void Dispose()
+            {
+                Console.WriteLine("[Boo]destroy");
             }
         }
         static Dictionary<string, Type> dic;
@@ -44,14 +48,14 @@ namespace DynamicInst
                 dic.Add("Boo", typeof(Boo));
 
                 dic.TryGetValue("Foo", out tp);
-                dynamic obj1 = Activator.CreateInstance(tp, null);
+                dynamic obj1 = Activator.CreateInstance(tp, 1,2,"banana");
                 //obj1.DoingSomething(10, 30, "apple");
 
                 dic.TryGetValue("Boo", out tp);
-                dynamic obj2 = Activator.CreateInstance(tp, null);
-                //obj2.DoingSomething(1, 3, "banana");
-                
-
+                // using (dynamic obj2 = Activator.CreateInstance(tp, 5, 6, "apple")) {}
+                dynamic obj2 = Activator.CreateInstance(tp, 5, 6, "apple");
+                obj2.Dispose();
+                Console.WriteLine("really really finished.");
             }
             catch(Exception e)
             {
