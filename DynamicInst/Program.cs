@@ -19,6 +19,10 @@ namespace DynamicInst
                 szData = c;
                 Console.WriteLine("[Foo]" + iData.ToString() + " " + iData2.ToString() + " " + szData);
             }
+            public void Dispose()
+            {
+                Console.WriteLine("[Foo]destroy");
+            }
         }
         public class Boo : IDisposable
         {
@@ -50,9 +54,10 @@ namespace DynamicInst
                 dic.TryGetValue("Foo", out tp);
                 dynamic obj1 = Activator.CreateInstance(tp, 1,2,"banana");
                 //obj1.DoingSomething(10, 30, "apple");
+                obj1.Dispose();
 
                 dic.TryGetValue("Boo", out tp);
-                // using (dynamic obj2 = Activator.CreateInstance(tp, 5, 6, "apple")) {}
+                using (dynamic obj = Activator.CreateInstance(tp, 5, 6, "apple")) {}
                 dynamic obj2 = Activator.CreateInstance(tp, 5, 6, "apple");
                 obj2.Dispose();
                 Console.WriteLine("really really finished.");
