@@ -53,13 +53,11 @@ namespace DynamicInst
 
                 dic.TryGetValue("Foo", out tp);
                 dynamic obj1 = Activator.CreateInstance(tp, 1,2,"banana");
-                //obj1.DoingSomething(10, 30, "apple");
                 obj1.Dispose();
 
                 dic.TryGetValue("Boo", out tp);
-                using (dynamic obj = Activator.CreateInstance(tp, 5, 6, "apple")) {}
-                dynamic obj2 = Activator.CreateInstance(tp, 5, 6, "apple");
-                obj2.Dispose();
+                using (dynamic obj = Activator.CreateInstance(tp, 5, 6, "apple")) { }
+                
                 Console.WriteLine("really really finished.");
             }
             catch(Exception e)
